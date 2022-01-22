@@ -1,0 +1,51 @@
+[2022-01-22 14:57:57,631: INFO: 01_base_model_creation]: 
+********************
+[2022-01-22 14:57:57,631: INFO: 01_base_model_creation]: >>>>> stage creating base model started <<<<<
+[2022-01-22 14:57:57,632: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-22 14:57:57,632: ERROR: 01_base_model_creation]: module 'keras.api._v2.keras' has no attribute 'dataset'
+Traceback (most recent call last):
+  File "src/01_base_model_creation.py", line 64, in <module>
+    main(config_path=parsed_args.config)
+  File "src/01_base_model_creation.py", line 26, in main
+    (x_train_full,y_train_full) ,(x_test,y_test) = tf.keras.dataset.mnist.load_data()
+AttributeError: module 'keras.api._v2.keras' has no attribute 'dataset'
+[2022-01-22 14:58:08,832: INFO: 01_base_model_creation]: 
+********************
+[2022-01-22 14:58:08,832: INFO: 01_base_model_creation]: >>>>> stage creating base model started <<<<<
+[2022-01-22 14:58:08,833: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-22 14:58:10,323: ERROR: 01_base_model_creation]: module 'keras.api._v2.keras.layers' has no attribute 'LeakyRelu'
+Traceback (most recent call last):
+  File "src/01_base_model_creation.py", line 64, in <module>
+    main(config_path=parsed_args.config)
+  File "src/01_base_model_creation.py", line 41, in main
+    tf.keras.layers.LeakyRelu(),
+AttributeError: module 'keras.api._v2.keras.layers' has no attribute 'LeakyRelu'
+[2022-01-22 14:59:08,772: INFO: 01_base_model_creation]: 
+********************
+[2022-01-22 14:59:08,772: INFO: 01_base_model_creation]: >>>>> stage creating base model started <<<<<
+[2022-01-22 14:59:08,772: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-22 14:59:09,702: INFO: 01_base_model_creation]: >>>>> stage creating base model completed!<<<<<
+
+[2022-01-22 15:11:15,108: INFO: 01_base_model_creation]: 
+********************
+[2022-01-22 15:11:15,108: INFO: 01_base_model_creation]: >>>>> stage creating base model started <<<<<
+[2022-01-22 15:11:15,109: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-22 15:11:15,611: ERROR: 01_base_model_creation]: fit() got an unexpected keyword argument 'epoch'
+Traceback (most recent call last):
+  File "src/01_base_model_creation.py", line 76, in <module>
+    main(config_path=parsed_args.config)
+  File "src/01_base_model_creation.py", line 59, in main
+    verbose=2)
+  File "/media/omkar/omkar/ineuron/regular/github/transfer_learning_template/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/omkar/omkar/ineuron/regular/github/transfer_learning_template/env/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+TypeError: fit() got an unexpected keyword argument 'epoch'
+[2022-01-22 15:11:28,385: INFO: 01_base_model_creation]: 
+********************
+[2022-01-22 15:11:28,385: INFO: 01_base_model_creation]: >>>>> stage creating base model started <<<<<
+[2022-01-22 15:11:28,386: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-01-22 15:12:00,298: INFO: common]: created directory at: artifacts/models
+[2022-01-22 15:12:00,350: INFO: 01_base_model_creation]: base model save dir artifacts/models/base_model.h5
+[2022-01-22 15:12:00,376: INFO: 01_base_model_creation]: >>>>> stage creating base model completed!<<<<<
+
